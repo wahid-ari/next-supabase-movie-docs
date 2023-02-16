@@ -1,39 +1,39 @@
 import Badge from "@components/Badge";
 import BadgeOutline from "@components/BadgeOutline";
 
-# Total Song by Artist
+# Total Studio by Country
 
 To get the data in the specified collection. If no parameters are passed, it lists all of them.
 Otherwise, it lists the documents in the collection matching the specified parameters:
 
 **Method :** <Badge variant="success">GET</Badge>
 
-**URL :** <Badge variant="dark">/api/statistics/song-by-artist</Badge>
+**URL :** <Badge variant="dark">/api/statistics/studio-by-country</Badge>
 
 **Response :** <BadgeOutline variant="success">200 - OK</BadgeOutline>
 
 ```json
 [
-  {
-    "id": 1,
-    "label": "Noah",
-    "total": 49
-  },
-  {
-    "id": 2,
-    "label": "Guns n Roses",
-    "total": 14
-  },
-  {
-    "id": 3,
-    "label": "Coldplay",
-    "total": 18
-  },
-  {
-    "id": 4,
-    "label": "Kshmr",
-    "total": 7
-  }
+	{
+		"id": 1,
+		"label": "United States",
+		"total": 21
+	},
+	{
+		"id": 2,
+		"label": "Indonesia",
+		"total": 5
+	},
+	{
+		"id": 9,
+		"label": "China",
+		"total": 1
+	},
+	{
+		"id": 19,
+		"label": "France",
+		"total": 1
+	}
 ]
 ```
 

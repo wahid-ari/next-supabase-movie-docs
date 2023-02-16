@@ -1,39 +1,69 @@
 import Badge from "@components/Badge";
 import BadgeOutline from "@components/BadgeOutline";
 
-# Total Album by Artist
+# Total Movie by Category
 
 To get the data in the specified collection. If no parameters are passed, it lists all of them.
 Otherwise, it lists the documents in the collection matching the specified parameters:
 
 **Method :** <Badge variant="success">GET</Badge>
 
-**URL :** <Badge variant="dark">/api/statistics/album-by-artist</Badge>
+**URL :** <Badge variant="dark">/api/statistics/movie-by-category</Badge>
 
 **Response :** <BadgeOutline variant="success">200 - OK</BadgeOutline>
 
 ```json
 [
-  {
-    "id": 1,
-    "label": "Noah",
-    "total": 7
-  },
-  {
-    "id": 2,
-    "label": "Guns n Roses",
-    "total": 4
-  },
-  {
-    "id": 3,
-    "label": "Coldplay",
-    "total": 5
-  },
-  {
-    "id": 4,
-    "label": "Kshmr",
-    "total": 1
-  }
+	{
+		"id": 1,
+		"label": "Action",
+		"total": 150
+	},
+	{
+		"id": 2,
+		"label": "Adventure",
+		"total": 90
+	},
+	{
+		"id": 18,
+		"label": "Thriller",
+		"total": 67
+	},
+	{
+		"id": 16,
+		"label": "Sci-Fi",
+		"total": 57
+	},
+	{
+		"id": 6,
+		"label": "Drama",
+		"total": 35
+	},
+	{
+		"id": 17,
+		"label": "Crime",
+		"total": 34
+	},
+	{
+		"id": 10,
+		"label": "Fantasy",
+		"total": 20
+	},
+	{
+		"id": 5,
+		"label": "Comedy",
+		"total": 19
+	},
+	{
+		"id": 3,
+		"label": "War",
+		"total": 9
+	},
+	{
+		"id": 14,
+		"label": "History",
+		"total": 7
+	}
 ]
 ```
 

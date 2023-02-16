@@ -1,0 +1,80 @@
+import Badge from "@components/Badge";
+import BadgeOutline from "@components/BadgeOutline";
+
+# Total Actor by Country
+
+To get the data in the specified collection. If no parameters are passed, it lists all of them.
+Otherwise, it lists the documents in the collection matching the specified parameters:
+
+**Method :** <Badge variant="success">GET</Badge>
+
+**URL :** <Badge variant="dark">/api/statistics/actor-by-country</Badge>
+
+**Response :** <BadgeOutline variant="success">200 - OK</BadgeOutline>
+
+```json
+[
+	{
+		"id": 1,
+		"label": "United States",
+		"total": 91
+	},
+	{
+		"id": 3,
+		"label": "United Kingdom",
+		"total": 30
+	},
+	{
+		"id": 2,
+		"label": "Indonesia",
+		"total": 14
+	},
+	{
+		"id": 5,
+		"label": "Australia",
+		"total": 4
+	},
+	{
+		"id": 15,
+		"label": "India",
+		"total": 4
+	},
+	{
+		"id": 4,
+		"label": "Canada",
+		"total": 3
+	},
+	{
+		"id": 8,
+		"label": "Germany",
+		"total": 3
+	},
+	{
+		"id": 9,
+		"label": "China",
+		"total": 3
+	},
+	{
+		"id": 19,
+		"label": "France",
+		"total": 3
+	},
+	{
+		"id": 6,
+		"label": "Hongkong",
+		"total": 2
+	}
+]
+```
+
+**Response :** <BadgeOutline variant="warning">404 - Not Found</BadgeOutline>
+
+```json
+Not Found
+```
+
+**Response :** <BadgeOutline variant="danger">500 - Server Error</BadgeOutline>
+
+```json
+Internal Server Error
+```

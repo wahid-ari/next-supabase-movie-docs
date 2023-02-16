@@ -18,7 +18,7 @@ The API playground is an interactive environment to make requests and preview an
 
 **Method :** <Badge variant="success">GET</Badge>
 
-**URL :** <Badge variant="dark">/api/search?q=noah</Badge>
+**URL :** <Badge variant="dark">/api/search?q=mission</Badge>
 
 **Request :**
 
@@ -30,7 +30,7 @@ The API playground is an interactive environment to make requests and preview an
       redirect: 'follow'
   };
 
-  fetch("http://localhost:3000/api/search?q=noah", requestOptions)
+  fetch("http://localhost:3000/api/search?q=mission", requestOptions)
       .then(response => response.text())
       .then(result => console.log(result))
       .catch(error => console.log('error', error));
@@ -43,7 +43,7 @@ The API playground is an interactive environment to make requests and preview an
   conn = http.client.HTTPSConnection("localhost", 3000)
   payload = ''
   headers = {}
-  conn.request("GET", "/api/search?q=noah", payload, headers)
+  conn.request("GET", "/api/search?q=mission", payload, headers)
   res = conn.getresponse()
   data = res.read()
   print(data.decode("utf-8"))
@@ -55,37 +55,41 @@ The API playground is an interactive environment to make requests and preview an
 
 ```json
 {
-  "songs": [],
-  "albums": [],
-  "artists": [
+  "movies": [
     {
-      "id": 1,
-      "created_at": "2022-07-06T10:43:42+00:00",
-      "name": "Noah",
-      "cover_url": "https://i.scdn.co/image/ab6761610000e5eba8fe25ec607f3cca02f5db6c",
-      "genre_id": 1
-    }
+      "id": 12,
+      "created_at": "2023-02-02T14:11:48.389816+00:00",
+      "name": "Mission: Impossible",
+      "description": "When Ethan Hunt, the leader of a crack espionage team whose perilous operation has gone awry with no explanation, discovers that a mole has penetrated the CIA, he's surprised to learn that he's the No. 1 suspect. To clear his name, Hunt now must ferret out the real double agent and, in the process, even the score.",
+      "image_url": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/l5uxY5m5OInWpcExIpKG6AR3rgL.jpg",
+      "video_url": "https://youtu.be/vadCbBuUM0E",
+      "release_date": "1996-05-22",
+      "language": "English",
+      "status": 2,
+      "director_id": 10,
+      "studio_id": 1
+    },
+    {
+      "id": 13,
+      "created_at": "2023-02-02T14:14:30.758263+00:00",
+      "name": "Mission: Impossible II",
+      "description": "With computer genius Luther Stickell at his side and a beautiful thief on his mind, agent Ethan Hunt races across Australia and Spain to stop a former IMF agent from unleashing a genetically engineered biological weapon called Chimera. This mission, should Hunt choose to accept it, plunges him into the center of an international crisis of terrifying magnitude.",
+      "image_url": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/1VMWLpk9VXyYcEZ8w3uUhp0OF1v.jpg",
+      "video_url": "https://youtu.be/vIpqpRuGrq4",
+      "release_date": "2000-06-03",
+      "language": "English",
+      "status": 2,
+      "director_id": 11,
+      "studio_id": 1
+    },
   ],
-  "playlists": [
-    {
-      "id": 1,
-      "user_id": null,
-      "name": "Noah Top 10 ",
-      "created_at": "2023-01-04T05:56:57.40715+00:00",
-      "playlist_song": [
-        {
-          "id": 19,
-          "playlist_id": 1,
-          "song_id": 2,
-          "created_at": "2023-01-04T08:57:27.606081+00:00"
-        }
-      ]
-    }
-  ]
+  "actors": [],
+  "directors": [],
+  "studios": []
 }
 ```
 
-**URL :** <Badge variant="dark">/api/search?q=bintang</Badge>
+**URL :** <Badge variant="dark">/api/search?q=tom</Badge>
 
 **Request :**
 
@@ -97,7 +101,7 @@ The API playground is an interactive environment to make requests and preview an
       redirect: 'follow'
   };
 
-  fetch("http://localhost:3000/api/search?q=bintang", requestOptions)
+  fetch("http://localhost:3000/api/search?q=tom", requestOptions)
       .then(response => response.text())
       .then(result => console.log(result))
       .catch(error => console.log('error', error));
@@ -110,7 +114,7 @@ The API playground is an interactive environment to make requests and preview an
   conn = http.client.HTTPSConnection("localhost", 3000)
   payload = ''
   headers = {}
-  conn.request("GET", "/api/search?q=bintang", payload, headers)
+  conn.request("GET", "/api/search?q=tom", payload, headers)
   res = conn.getresponse()
   data = res.read()
   print(data.decode("utf-8"))
@@ -122,43 +126,35 @@ The API playground is an interactive environment to make requests and preview an
 
 ```json
 {
-  "songs": [
-    {
-      "id": 2,
-      "name": "Bintang Di Surga",
-      "youtube_url": "B1ynHmn0XZ4",
-      "cover_url": "https://i.scdn.co/image/ab67616d00001e02af69d9e82cc973f608481610",
-      "artist_id": 1,
-      "created_at": "2022-07-06T10:38:10+00:00",
-      "album_id": 1,
-      "preview_url": "https://p.scdn.co/mp3-preview/09474fc657c15038cb699afa4a52b4fac9383d62",
-      "artist_name": "Noah"
-    },
-    {
-      "id": 16,
-      "name": "Aku & Bintang",
-      "youtube_url": "4jO1t6QMYfg",
-      "cover_url": "https://i.scdn.co/image/ab67616d0000b27324496b7707e9304c4ad76c5a",
-      "artist_id": 1,
-      "created_at": "2023-01-04T06:00:41.095572+00:00",
-      "album_id": 3,
-      "preview_url": "https://p.scdn.co/mp3-preview/a84561968341bc5cebdc98bacebd104e8dcc5856",
-      "artist_name": "Noah"
-    }
-  ],
-  "albums": [
+  "movies": [],
+  "actors": [
     {
       "id": 1,
-      "created_at": "2022-12-22T13:41:57.364685+00:00",
-      "name": "Bintang di Surga",
-      "cover": "https://i.scdn.co/image/ab67616d00001e02af69d9e82cc973f608481610",
-      "updated_at": "2022-12-22T13:41:57.364685",
-      "artists_id": 1,
-      "artist_name": "Noah"
-    }
+      "name": "Tom Cruise",
+      "image_url": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/8qBylBsQf4llkGrWR3qAsOtOU8O.jpg",
+      "gender": 1,
+      "biography": "Thomas Cruise Mapother IV (born July 3, 1962), known professionally as Tom Cruise, is an American actor and producer. One of the world's highest-paid actors, he has received various accolades, including an Honorary Palme d'Or and three Golden Globe Awards, in addition to nominations for three Academy Awards. His films have grossed over $4 billion in North America and over $11.1 billion worldwide, making him one of the highest-grossing box office stars of all time.",
+      "birthday": "1962-07-03",
+      "instagram_url": "https://instagram.com/tomcruise/",
+      "twitter_url": "https://twitter.com/tomcruise",
+      "country_id": 1,
+      "created_at": "2023-01-31T08:34:44.320445+00:00"
+    },
+    {
+      "id": 12,
+      "name": "Tom Holland",
+      "image_url": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/hMp5y4Nro5pv4Nawyt3Ld9TsKfO.jpg",
+      "gender": 1,
+      "biography": "Thomas \"Tom\" Stanley Holland is an English actor and dancer.\n\nHe is best known for playing Peter Parker / Spider-Man in the Marvel Cinematic Universe and has appeared as the character in six films: Captain America: Civil War (2016), Spider-Man: Homecoming (2017), Avengers: Infinity War (2018), Avengers: Endgame (2019), Spider-Man: Far From Home (2019), and Spider-Man: No Way Home (2021).\n\nHe is also known for playing the title role in Billy Elliot the Musical at the Victoria Palace Theatre, London, as well as for starring in the 2012 film The Impossible.",
+      "birthday": "1996-06-01",
+      "instagram_url": "https://instagram.com/tomholland2013/",
+      "twitter_url": "https://twitter.com/TomHolland1996",
+      "country_id": 3,
+      "created_at": "2023-02-01T22:50:44.33712+00:00"
+    },
   ],
-  "artists": [],
-  "playlists": []
+  "directors": [],
+  "studios": []
 }
 ```
 

@@ -1,0 +1,80 @@
+import Badge from "@components/Badge";
+import BadgeOutline from "@components/BadgeOutline";
+
+# Total Movie by Studio
+
+To get the data in the specified collection. If no parameters are passed, it lists all of them.
+Otherwise, it lists the documents in the collection matching the specified parameters:
+
+**Method :** <Badge variant="success">GET</Badge>
+
+**URL :** <Badge variant="dark">/api/statistics/movie-by-studio</Badge>
+
+**Response :** <BadgeOutline variant="success">200 - OK</BadgeOutline>
+
+```json
+[
+	{
+		"id": 1,
+		"label": "Paramount Pictures",
+		"total": 24
+	},
+	{
+		"id": 9,
+		"label": "Marvel Studios",
+		"total": 24
+	},
+	{
+		"id": 8,
+		"label": "Sony Pictures",
+		"total": 22
+	},
+	{
+		"id": 12,
+		"label": "Universal Pictures",
+		"total": 20
+	},
+	{
+		"id": 19,
+		"label": "Lionsgate",
+		"total": 16
+	},
+	{
+		"id": 7,
+		"label": "Warner Bros",
+		"total": 15
+	},
+	{
+		"id": 13,
+		"label": "20th Century Studios",
+		"total": 7
+	},
+	{
+		"id": 15,
+		"label": "Netflix",
+		"total": 5
+	},
+	{
+		"id": 27,
+		"label": "Lucasfilm",
+		"total": 4
+	},
+	{
+		"id": 28,
+		"label": " Golden Harvest",
+		"total": 4
+	}
+]
+```
+
+**Response :** <BadgeOutline variant="warning">404 - Not Found</BadgeOutline>
+
+```json
+Not Found
+```
+
+**Response :** <BadgeOutline variant="danger">500 - Server Error</BadgeOutline>
+
+```json
+Internal Server Error
+```

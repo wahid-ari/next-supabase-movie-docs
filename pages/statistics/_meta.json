@@ -1,7 +1,9 @@
 {
-  "artist-by-genre": "Artist by Genre",
-  "album-by-artist": "Album by Artist",
-  "song-by-album": "Song by Album",
-  "song-by-artist": "Song by Artist",
-  "song-by-playlist": "Song by Playlist"
+  "movie-by-actor": "Movie by Actor",
+  "movie-by-category": "Movie by Category",
+  "movie-by-studio": "Movie by Studio",
+  "movie-by-director": "Movie by Director",
+  "actor-by-country": "Actor by Country",
+  "studio-by-country": "Studio by Country",
+  "director-by-country": "Director by Country"
 }

@@ -1,0 +1,80 @@
+import Badge from "@components/Badge";
+import BadgeOutline from "@components/BadgeOutline";
+
+# Total Movie by Director
+
+To get the data in the specified collection. If no parameters are passed, it lists all of them.
+Otherwise, it lists the documents in the collection matching the specified parameters:
+
+**Method :** <Badge variant="success">GET</Badge>
+
+**URL :** <Badge variant="dark">/api/statistics/movie-by-director</Badge>
+
+**Response :** <BadgeOutline variant="success">200 - OK</BadgeOutline>
+
+```json
+[
+	{
+		"id": 55,
+		"label": "Michael Bay",
+		"total": 9
+	},
+	{
+		"id": 2,
+		"label": "Christopher McQuarrie",
+		"total": 6
+	},
+	{
+		"id": 65,
+		"label": "Justin Lin",
+		"total": 6
+	},
+	{
+		"id": 1,
+		"label": "Chad Stahelski",
+		"total": 4
+	},
+	{
+		"id": 3,
+		"label": "Doug Liman",
+		"total": 4
+	},
+	{
+		"id": 14,
+		"label": "Zack Snyder",
+		"total": 4
+	},
+	{
+		"id": 85,
+		"label": "Wilson Yip",
+		"total": 4
+	},
+	{
+		"id": 12,
+		"label": "J.J. Abrams",
+		"total": 3
+	},
+	{
+		"id": 21,
+		"label": "Joe Russo",
+		"total": 3
+	},
+	{
+		"id": 38,
+		"label": "Jon Watts",
+		"total": 3
+	}
+]
+```
+
+**Response :** <BadgeOutline variant="warning">404 - Not Found</BadgeOutline>
+
+```json
+Not Found
+```
+
+**Response :** <BadgeOutline variant="danger">500 - Server Error</BadgeOutline>
+
+```json
+Internal Server Error
+```

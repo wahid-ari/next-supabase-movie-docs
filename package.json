@@ -1,7 +1,7 @@
 {
   "name": "next-supabase-music-docs",
   "version": "0.0.1",
-  "description": "MyMusic Docs",
+  "description": "MyMovie Docs",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

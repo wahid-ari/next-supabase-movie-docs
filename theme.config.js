@@ -17,10 +17,10 @@ const config = {
         {/* {route === '/' ? null : ( */}
         <span
           className='mx-2 font-bold select-none'
-          title='MyMusic Docs'
+          title='MyMovie Docs'
           style={{ whiteSpace: 'nowrap' }}
         >
-          MyMusic API Docs
+          MyMovie API Docs
         </span>
         {/* )} */}
       </>
@@ -40,7 +40,7 @@ const config = {
     const { route } = useRouter()
     if (route !== '/') {
       return {
-        titleTemplate: '%s – MyMusic API Docs'
+        titleTemplate: '%s – MyMovie API Docs'
       }
     }
   },
@@ -51,9 +51,9 @@ const config = {
       <meta name="theme-color" content="#ffffff" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <meta name="description" content="MyMusic Docs" />
-      <meta name="og:description" content="MyMusic Docs" />
-      <meta name="og:title" content="MyMusic" />
+      <meta name="description" content="MyMovie Docs" />
+      <meta name="og:description" content="MyMovie Docs" />
+      <meta name="og:title" content="MyMovie" />
       <meta name="og:image" content="https://my-music-docs.vercel.app/og.png" />
 
       <meta name="twitter:card" content="summary_large_image" />
@@ -62,7 +62,7 @@ const config = {
       <meta name="twitter:url" content="https://nextra.site" />
       <meta name="twitter:image" content="https://my-music-docs.vercel.app/og.png" />
 
-      <meta name="apple-mobile-web-app-title" content="MyMusic" />
+      <meta name="apple-mobile-web-app-title" content="MyMovie" />
       <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png" />
 
       <link rel="icon" href="/favicon.ico" />
@@ -79,8 +79,8 @@ const config = {
   banner: {
     key: 'banner',
     text: (
-      <a href="https://my-music-docs.vercel.app/blog/mymusic">
-        🎉 MyMusic 1.0 is released. Read more →
+      <a href="https://my-music-docs.vercel.app/blog/MyMovie">
+        🎉 MyMovie 1.0 is released. Read more →
       </a>
     )
   },
@@ -113,7 +113,7 @@ const config = {
               </svg>
             </a>
           </div>
-          <p className="mt-4 text-sm text-center md:text-left">© 2022 MyMusic.</p>
+          <p className="mt-4 text-sm text-center md:text-left">© 2022 MyMovie.</p>
         </div>
       )
     }
