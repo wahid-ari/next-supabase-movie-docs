@@ -1,0 +1,63 @@
+import Badge from "@components/Badge";
+import BadgeOutline from "@components/BadgeOutline";
+import Expandable from "@components/Expandable";
+import Param from "@components/Param";
+
+# Update Song
+
+To edit the data in the specified collection with the specified parameters.
+When a JSON object is saved, the object properties are automatically added to the collection you specified.
+
+**Method :** <Badge variant="info">PUT</Badge>
+
+**URL :** <Badge variant="dark">/api/song?id=(id)</Badge>
+
+**Body :** <Badge variant="purple">JSON</Badge>
+
+```json
+{
+  "name": "Edited Song",
+  "artist_id": 1,
+  "album_id": 2,
+  "cover_url": "https://i.scdn.co/image/ab67616d00001e02af69d9e82cc973f608481610",
+  "preview_url": "https://p.scdn.co/mp3-preview/c6e19c3e7e0af8cf26f54b41468b1b0121166f11",
+  "youtube_url": "sEM01iNOSQA"
+}
+```
+
+<Expandable title="properties">
+  <Param name="name" type="string" required={true}>Name of Song.</Param>
+  <Param name="artist_id" type="number" required={true}>Id of Artist.</Param>
+  <Param name="album_id" type="number" optional>Id of Album.</Param>
+  <Param name="cover_url" type="string" optional>Song Cover Image URL.</Param>
+  <Param name="preview_url" type="string" optional>Song MP3 Preview URL.</Param>
+  <Param name="youtube_url" type="string" optional>Song Youtube URL.</Param>
+</Expandable>
+
+**Response :** <BadgeOutline variant="success">200 - OK</BadgeOutline>
+
+```json
+{
+  "message": "Success update song"
+}
+```
+
+**Response :** <BadgeOutline variant="info">422 - Unprocessable Content</BadgeOutline>
+
+```json
+{
+  "error": "Name required"
+}
+```
+
+**Response :** <BadgeOutline variant="warning">404 - Not Found</BadgeOutline>
+
+```json
+Not Found
+```
+
+**Response :** <BadgeOutline variant="danger">500 - Server Error</BadgeOutline>
+
+```json
+Internal Server Error
+```
