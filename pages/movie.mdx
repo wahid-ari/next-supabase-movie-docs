@@ -1,0 +1,17 @@
+import ApiPlayground from "@components/ApiPlayground";
+
+# Movie API Playground
+
+The API playground is an interactive environment to make requests and preview an API endpoint.
+
+### All Movie
+
+<ApiPlayground method="GET" endpoint="movie">
+	Tes endpoint `movie`
+</ApiPlayground>
+
+### Single Movie
+
+<ApiPlayground method="GET" endpoint="movie" param={true} paramName="id">
+	Tes endpoint `movie` with `id` as param
+</ApiPlayground>

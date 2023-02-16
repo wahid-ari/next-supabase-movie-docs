@@ -1,0 +1,102 @@
+import Badge from "@components/Badge";
+import BadgeOutline from "@components/BadgeOutline";
+import Param from "@components/Param";
+
+# Update Movie
+
+To edit the data in the specified collection with the specified parameters.
+When a JSON object is saved, the object properties are automatically added to the collection you specified.
+
+**Method :** <Badge variant="info">PUT</Badge>
+
+**URL :** <Badge variant="dark">/api/movie?id=(id)</Badge>
+
+**Body :** <Badge variant="purple">JSON</Badge>
+
+```json
+{
+	"name": "New Movie Edited",
+	"description": "Description New Movie",
+	"image_url": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/AkJQpZp9WoNdj7pLYSj1L0RcMMN.jpg",
+	"video_url": "https://youtu.be/wb49-oV0F78",
+	"release_date": "2023-02-13",
+	"language": "English",
+	"status": 2,
+	"director_id": 1,
+	"studio_id": 1,
+	"actors": [
+		{
+			"value": 1,
+			"label": "Tom Cruise"
+		}
+	],
+	"categories": [
+		{
+			"value": 1,
+			"label": "Action"
+		}
+	]
+}
+```
+
+<Param name="name" type="string" required={true}>
+	Name of movie.
+</Param>
+<Param name="description" type="string">
+	Description of movie.
+</Param>
+<Param name="image_url" type="string">
+	Image URL of movie poster.
+</Param>
+<Param name="video_url" type="string">
+	Video URL of movie trailer.
+</Param>
+<Param name="release_date" type="string">
+	Release Date of movie.
+</Param>
+<Param name="language" type="string">
+	Language of movie.
+</Param>
+<Param name="status" type="integer">
+	Status of movie. 1 (Production) | 2 (Released)
+</Param>
+<Param name="director_id" type="integer">
+	Director ID of movie.
+</Param>
+<Param name="studio_id" type="integer">
+	Studio ID of movie.
+</Param>
+<Param name="actors" type="array of object">
+	Movie actors
+</Param>
+<Param name="categories" type="array of object">
+	Movie categories
+</Param>
+
+**Response :** <BadgeOutline variant="success">200 - OK</BadgeOutline>
+
+```json
+{
+	"message": "Success update movie"
+}
+```
+
+**Response :** <BadgeOutline variant="info">422 - Unprocessable Content</BadgeOutline>
+
+```json
+{
+	"error": "Name required"
+}
+```
+
+**Response :** <BadgeOutline variant="warning">404 - Not Found</BadgeOutline>
+
+```json
+Not Found
+```
+
+**Response :** <BadgeOutline variant="danger">500 - Server Error</BadgeOutline>
+
+```json
+Internal Server Error
+```

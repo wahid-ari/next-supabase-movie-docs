@@ -1,0 +1,7 @@
+{
+  "list": "Get All Movie",
+  "detail": "Get Detail Movie",
+  "create": "Create Movie",
+  "edit": "Update Movie",
+  "delete": "Delete Movie"
+}
