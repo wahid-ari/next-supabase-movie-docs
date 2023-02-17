@@ -1,0 +1,80 @@
+import Badge from "@components/Badge";
+import BadgeOutline from "@components/BadgeOutline";
+import Param from "@components/Param";
+
+# Update Actor
+
+To edit the data in the specified collection with the specified parameters.
+When a JSON object is saved, the object properties are automatically added to the collection you specified.
+
+**Method :** <Badge variant="info">PUT</Badge>
+
+**URL :** <Badge variant="dark">/api/actor?id=(id)</Badge>
+
+**Body :** <Badge variant="purple">JSON</Badge>
+
+```json
+{
+	"name": "New Actor Edit",
+	"image_url": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/8qBylBsQf4llkGrWR3qAsOtOU8O.jpg",
+	"gender": 1,
+	"biography": "New Actor Bio",
+	"birthday": "1980-05-05",
+	"instagram_url": "https://instagram.com/",
+	"twitter_url": "https://twitter.com/",
+	"country_id": 1
+}
+```
+
+<Param name="name" type="string" required={true}>
+	Name of actor.
+</Param>
+<Param name="image_url" type="string">
+	Image URL of actor.
+</Param>
+<Param name="gender" type="integer">
+	Gender of actor. 1 (Male) | 2 (Female)
+</Param>
+<Param name="biography" type="string">
+	Biography of actor.
+</Param>
+<Param name="birthday" type="string (date)">
+	Birthday of actor.
+</Param>
+<Param name="instagram_url" type="string">
+	Instagram URL of actor
+</Param>
+<Param name="twitter_url" type="string">
+	Twitter URL of actor
+</Param>
+<Param name="country_id" type="integer">
+	Country ID of actor
+</Param>
+
+**Response :** <BadgeOutline variant="success">200 - OK</BadgeOutline>
+
+```json
+{
+	"message": "Success update actor"
+}
+```
+
+**Response :** <BadgeOutline variant="info">422 - Unprocessable Content</BadgeOutline>
+
+```json
+{
+	"error": "Name required"
+}
+```
+
+**Response :** <BadgeOutline variant="warning">404 - Not Found</BadgeOutline>
+
+```json
+Not Found
+```
+
+**Response :** <BadgeOutline variant="danger">500 - Server Error</BadgeOutline>
+
+```json
+Internal Server Error
+```

@@ -1,0 +1,7 @@
+{
+  "list": "Get All Actor",
+  "detail": "Get Detail Actor",
+  "create": "Create Actor",
+  "edit": "Update Actor",
+  "delete": "Delete Actor"
+}

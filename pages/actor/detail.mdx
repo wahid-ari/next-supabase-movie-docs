@@ -1,0 +1,73 @@
+import Badge from "@components/Badge";
+import BadgeOutline from "@components/BadgeOutline";
+
+# Get Detail Actor
+
+To get the data in the specified collection. If no parameters are passed, it lists all of them.
+Otherwise, it lists the documents in the collection matching the specified parameters:
+
+**Method :** <Badge variant="success">GET</Badge>
+
+**URL :** <Badge variant="dark">/api/actor?id=(id)</Badge>
+
+**Response :** <BadgeOutline variant="success">200 - OK</BadgeOutline>
+
+```json
+{
+	"id": 1,
+	"name": "Tom Cruise",
+	"image_url": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/8qBylBsQf4llkGrWR3qAsOtOU8O.jpg",
+	"gender": 1,
+	"biography": "Thomas Cruise Mapother IV (born July 3, 1962), known professionally as Tom Cruise, is an American actor and producer. One of the world's highest-paid actors, he has received various accolades, including an Honorary Palme d'Or and three Golden Globe Awards, in addition to nominations for three Academy Awards. His films have grossed over $4 billion in North America and over $11.1 billion worldwide, making him one of the highest-grossing box office stars of all time.",
+	"birthday": "1962-07-03",
+	"instagram_url": "https://instagram.com/tomcruise/",
+	"twitter_url": "https://twitter.com/tomcruise",
+	"country_id": 1,
+	"created_at": "2023-01-31T08:34:44.320445+00:00",
+	"countries": {
+		"id": 1,
+		"name": "United States",
+		"created_at": "2023-01-30T05:58:46.709345+00:00"
+	},
+	"movies": [
+		{
+			"id": 1,
+			"created_at": "2023-02-01T10:31:57.292987+00:00",
+			"name": "Top Gun: Maverick",
+			"description": "After more than thirty years of service as one of the Navy’s top aviators, and dodging the advancement in rank that would ground him, Pete “Maverick” Mitchell finds himself training a detachment of TOP GUN graduates for a specialized mission the likes of which no living pilot has ever seen.",
+			"image_url": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/62HCnUTziyWcpDaBO2i1DX17ljH.jpg",
+			"video_url": "https://youtu.be/qSqVVswa420",
+			"release_date": "2022-05-27",
+			"language": "English",
+			"status": 2,
+			"director_id": 2,
+			"studio_id": 1
+		},
+		{
+			"id": 17,
+			"created_at": "2023-02-02T14:29:31.64327+00:00",
+			"name": "Mission: Impossible - Fallout",
+			"description": "When an IMF mission ends badly, the world is faced with dire consequences. As Ethan Hunt takes it upon himself to fulfill his original briefing, the CIA begin to question his loyalty and his motives. The IMF team find themselves in a race against time, hunted by assassins while trying to prevent a global catastrophe.",
+			"image_url": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/AkJQpZp9WoNdj7pLYSj1L0RcMMN.jpg",
+			"video_url": "https://youtu.be/wb49-oV0F78",
+			"release_date": "2018-03-31",
+			"language": "English",
+			"status": 2,
+			"director_id": 2,
+			"studio_id": 1
+		},
+	]
+}
+```
+
+**Response :** <BadgeOutline variant="warning">404 - Not Found</BadgeOutline>
+
+```json
+Not Found
+```
+
+**Response :** <BadgeOutline variant="danger">500 - Server Error</BadgeOutline>
+
+```json
+Internal Server Error
+```

@@ -40,7 +40,8 @@ export default function Param({ name, type, defaultValue, required = false, opti
           </div>
         )}
         {type && (
-          <div className="text-neutral-600 dark:text-neutral-300">{type}</div>
+          <span className="text-neutral-600 dark:text-neutral-300">{type}</span>
+
         )}
       </div>
       <div className="mt-2 prose-sm prose-neutral dark:prose-dark">

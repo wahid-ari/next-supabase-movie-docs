@@ -1,0 +1,64 @@
+import Badge from "@components/Badge";
+import BadgeOutline from "@components/BadgeOutline";
+
+# Get All Actor
+
+To get the data in the specified collection. If no parameters are passed, it lists all of them.
+Otherwise, it lists the documents in the collection matching the specified parameters:
+
+**Method :** <Badge variant="success">GET</Badge>
+
+**URL :** <Badge variant="dark">/api/actor</Badge>
+
+**Response :** <BadgeOutline variant="success">200 - OK</BadgeOutline>
+
+```json
+[
+	{
+		"id": 1,
+		"name": "Tom Cruise",
+		"image_url": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/8qBylBsQf4llkGrWR3qAsOtOU8O.jpg",
+		"gender": 1,
+		"biography": "Thomas Cruise Mapother IV (born July 3, 1962), known professionally as Tom Cruise, is an American actor and producer. One of the world's highest-paid actors, he has received various accolades, including an Honorary Palme d'Or and three Golden Globe Awards, in addition to nominations for three Academy Awards. His films have grossed over $4 billion in North America and over $11.1 billion worldwide, making him one of the highest-grossing box office stars of all time.",
+		"birthday": "1962-07-03",
+		"instagram_url": "https://instagram.com/tomcruise/",
+		"twitter_url": "https://twitter.com/tomcruise",
+		"country_id": 1,
+		"created_at": "2023-01-31T08:34:44.320445+00:00",
+		"countries": {
+			"id": 1,
+			"name": "United States",
+			"created_at": "2023-01-30T05:58:46.709345+00:00"
+		}
+	},
+	{
+		"id": 2,
+		"name": "Henry Cavill",
+		"image_url": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/dgTD7Q9owL3DyX9uYoSX9KZeUUz.jpg",
+		"gender": 1,
+		"biography": "Henry William Dalgliesh Cavill (born 5 May 1983) is a British actor. He is known for his portrayal of Charles Brandon in Showtime's The Tudors (2007–2010), DC Comics character Superman in the DC Extended Universe, Geralt of Rivia in the Netflix fantasy series The Witcher (2019–present), as well as Sherlock Holmes in the Netflix film Enola Holmes (2020). Cavill began his career with roles in the feature adaptations of The Count of Monte Cristo (2002) and I Capture the Castle (2003). He later portrayed supporting roles in several television series, including BBC's The Inspector Lynley Mysteries, ITV's Midsomer Murders, and Showtime's The Tudors.",
+		"birthday": "1983-03-03",
+		"instagram_url": "https://instagram.com/henrycavill/",
+		"twitter_url": null,
+		"country_id": 3,
+		"created_at": "2023-01-31T08:36:38.681533+00:00",
+		"countries": {
+			"id": 3,
+			"name": "United Kingdom",
+			"created_at": "2023-01-31T08:39:45.060757+00:00"
+		}
+	}
+]
+```
+
+**Response :** <BadgeOutline variant="warning">404 - Not Found</BadgeOutline>
+
+```json
+Not Found
+```
+
+**Response :** <BadgeOutline variant="danger">500 - Server Error</BadgeOutline>
+
+```json
+Internal Server Error
+```
