@@ -1,0 +1,58 @@
+import Badge from "@components/Badge";
+import BadgeOutline from "@components/BadgeOutline";
+
+# Get All Director
+
+To get the data in the specified collection. If no parameters are passed, it lists all of them.
+Otherwise, it lists the documents in the collection matching the specified parameters:
+
+**Method :** <Badge variant="success">GET</Badge>
+
+**URL :** <Badge variant="dark">/api/director</Badge>
+
+**Response :** <BadgeOutline variant="success">200 - OK</BadgeOutline>
+
+```json
+[
+	{
+		"id": 1,
+		"name": "Chad Stahelski",
+		"image_url": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/eRCryGwKDH4XqUlrdkERmeBWPo8.jpg",
+		"gender": 1,
+		"biography": "Chad Stahelski is an American stuntman and film director. He is known for directing 2014 film John Wick along with David Leitch, and for doubling Brandon Lee after the fatal accident involving Lee at the set of The Crow (1994). He has also worked as a stunt coordinator and second unit director on several films.",
+		"country_id": 1,
+		"created_at": "2023-01-30T14:12:55.820094+00:00",
+		"countries": {
+			"id": 1,
+			"name": "United States",
+			"created_at": "2023-01-30T05:58:46.709345+00:00"
+		}
+	},
+	{
+		"id": 2,
+		"name": "Christopher McQuarrie",
+		"image_url": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/82W339V8turXUdaCajqOyekxhmD.jpg",
+		"gender": 1,
+		"biography": "Christopher McQuarrie is an American screenwriter, producer and director. His screenplays include The Usual Suspects, for which he won the 1996 Academy Award, The Way of the Gun and Valkyrie. He is the creator of NBC television series Persons Unknown.",
+		"country_id": 1,
+		"created_at": "2023-01-30T14:14:19.719023+00:00",
+		"countries": {
+			"id": 1,
+			"name": "United States",
+			"created_at": "2023-01-30T05:58:46.709345+00:00"
+		}
+	}
+]
+```
+
+**Response :** <BadgeOutline variant="warning">404 - Not Found</BadgeOutline>
+
+```json
+Not Found
+```
+
+**Response :** <BadgeOutline variant="danger">500 - Server Error</BadgeOutline>
+
+```json
+Internal Server Error
+```

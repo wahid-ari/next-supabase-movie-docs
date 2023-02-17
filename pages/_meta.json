@@ -5,9 +5,9 @@
   "statistics": "Statistics",
   "movie": "Movie",
   "actor": "Actor",
+  "director": "Director",
   "playlist-user": "Playlist User",
   "playlist": "Playlist",
-  "album": "Album",
   "song": "Song",
   "updates": "Updates",
   "blog": {

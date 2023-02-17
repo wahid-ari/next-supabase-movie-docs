@@ -2,34 +2,48 @@ import Badge from "@components/Badge";
 import BadgeOutline from "@components/BadgeOutline";
 import Param from "@components/Param";
 
-# Create Album
+# Create Director
 
 To create the data in the specified collection with the specified parameters.
 When a JSON object is saved, the object properties are automatically added to the collection you specified.
 
 **Method :** <Badge>POST</Badge>
 
-**URL :** <Badge variant="dark">/api/album</Badge>
+**URL :** <Badge variant="dark">/api/director</Badge>
 
 **Body :** <Badge variant="purple">JSON</Badge>
 
 ```json
 {
-  "name": "New Album",
-  "cover_url": "https://i.scdn.co/image/ab67616d00001e02af69d9e82cc973f608481610",
-  "artist_id": 1
+	"name": "New Director",
+	"image_url": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/82W339V8turXUdaCajqOyekxhmD.jpg",
+	"gender": 1,
+	"biography": "New Director Bio",
+	"country_id": 1
 }
 ```
 
-<Param name="name" type="string" required={true}>Name of Album.</Param>
-<Param name="cover_url" type="string" optional>Album Cover Image URL.</Param>
-<Param name="artist_id" type="number" required={true}>Id of Artist.</Param>
+<Param name="name" type="string" required={true}>
+	Name of director.
+</Param>
+<Param name="image_url" type="string">
+	Image URL of director.
+</Param>
+<Param name="gender" type="integer">
+	Gender of director. 1 (Male) | 2 (Female)
+</Param>
+<Param name="biography" type="string">
+	Biography of director.
+</Param>
+<Param name="country_id" type="integer">
+	Country ID of director
+</Param>
 
 **Response :** <BadgeOutline variant="success">200 - OK</BadgeOutline>
 
 ```json
 {
-  "message": "Success add album"
+	"message": "Success add director"
 }
 ```
 
@@ -37,12 +51,7 @@ When a JSON object is saved, the object properties are automatically added to th
 
 ```json
 {
-  {
-    "error": "Name required"
-  },
-  {
-    "error": "Artist required"
-  }
+	"error": "Name required"
 }
 ```
 

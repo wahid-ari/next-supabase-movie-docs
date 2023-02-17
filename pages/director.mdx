@@ -1,0 +1,17 @@
+import ApiPlayground from "@components/ApiPlayground";
+
+# Director API Playground
+
+The API playground is an interactive environment to make requests and preview an API endpoint.
+
+### All Director
+
+<ApiPlayground method="GET" endpoint="director">
+	Tes endpoint `director`
+</ApiPlayground>
+
+### Single Director
+
+<ApiPlayground method="GET" endpoint="director" param={true} paramName="id">
+	Tes endpoint `director` with `id` as param
+</ApiPlayground>

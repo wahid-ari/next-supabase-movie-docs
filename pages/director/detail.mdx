@@ -1,0 +1,70 @@
+import Badge from "@components/Badge";
+import BadgeOutline from "@components/BadgeOutline";
+
+# Get Detail Director
+
+To get the data in the specified collection. If no parameters are passed, it lists all of them.
+Otherwise, it lists the documents in the collection matching the specified parameters:
+
+**Method :** <Badge variant="success">GET</Badge>
+
+**URL :** <Badge variant="dark">/api/director/detail?id=1</Badge>
+
+**Response :** <BadgeOutline variant="success">200 - OK</BadgeOutline>
+
+```json
+{
+	"id": 1,
+	"name": "Chad Stahelski",
+	"image_url": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/eRCryGwKDH4XqUlrdkERmeBWPo8.jpg",
+	"gender": 1,
+	"biography": "Chad Stahelski is an American stuntman and film director. He is known for directing 2014 film John Wick along with David Leitch, and for doubling Brandon Lee after the fatal accident involving Lee at the set of The Crow (1994). He has also worked as a stunt coordinator and second unit director on several films.",
+	"country_id": 1,
+	"created_at": "2023-01-30T14:12:55.820094+00:00",
+	"countries": {
+		"id": 1,
+		"name": "United States",
+		"created_at": "2023-01-30T05:58:46.709345+00:00"
+	},
+	"movies": [
+		{
+			"id": 130,
+			"created_at": "2023-02-06T07:51:44.901087+00:00",
+			"name": "John Wick",
+			"description": "Ex-hitman John Wick comes out of retirement to track down the gangsters that took everything from him.",
+			"image_url": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/fZPSd91yGE9fCcCe6OoQr6E3Bev.jpg",
+			"video_url": "https://youtu.be/2AUmvWm5ZDQ",
+			"release_date": "2014-10-24",
+			"language": "English",
+			"status": 2,
+			"director_id": 1,
+			"studio_id": 19
+		},
+		{
+			"id": 133,
+			"created_at": "2023-02-06T07:58:29.479637+00:00",
+			"name": "John Wick: Chapter 4",
+			"description": "With the price on his head ever increasing, John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes.",
+			"image_url": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/rAvgE4ms5eBJAz15Elk9t6MJzyU.jpg",
+			"video_url": "https://youtu.be/cYX2_lDYZpI",
+			"release_date": "2023-03-24",
+			"language": "English",
+			"status": 1,
+			"director_id": 1,
+			"studio_id": 19
+		}
+	]
+}
+```
+
+**Response :** <BadgeOutline variant="warning">404 - Not Found</BadgeOutline>
+
+```json
+Not Found
+```
+
+**Response :** <BadgeOutline variant="danger">500 - Server Error</BadgeOutline>
+
+```json
+Internal Server Error
+```

@@ -1,0 +1,7 @@
+{
+  "list": "Get All Director",
+  "detail": "Get Detail Director",
+  "create": "Create Director",
+  "edit": "Update Director",
+  "delete": "Delete Director"
+}
