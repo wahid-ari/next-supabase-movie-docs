@@ -1,0 +1,8 @@
+{
+  "list": "Get All Category",
+  "detail": "Get Detail Category",
+  "total": "Get Total Movie",
+  "create": "Create Category",
+  "edit": "Update Category",
+  "delete": "Delete Category"
+}

@@ -1,0 +1,17 @@
+import ApiPlayground from "@components/ApiPlayground";
+
+# Studio API Playground
+
+The API playground is an interactive environment to make requests and preview an API endpoint.
+
+### All Studio
+
+<ApiPlayground method="GET" endpoint="studio">
+	Tes endpoint `studio`
+</ApiPlayground>
+
+### Single Studio
+
+<ApiPlayground method="GET" endpoint="studio" param={true} paramName="id">
+	Tes endpoint `studio` with `id` as param
+</ApiPlayground>

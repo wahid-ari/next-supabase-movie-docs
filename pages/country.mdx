@@ -1,0 +1,17 @@
+import ApiPlayground from "@components/ApiPlayground";
+
+# Country API Playground
+
+The API playground is an interactive environment to make requests and preview an API endpoint.
+
+### All Country
+
+<ApiPlayground method="GET" endpoint="country">
+	Tes endpoint `country`
+</ApiPlayground>
+
+### Single Country
+
+<ApiPlayground method="GET" endpoint="country" param={true} paramName="id">
+	Tes endpoint `country` with `id` as param
+</ApiPlayground>

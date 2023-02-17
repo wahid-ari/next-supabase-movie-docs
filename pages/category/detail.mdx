@@ -1,0 +1,61 @@
+import Badge from "@components/Badge";
+import BadgeOutline from "@components/BadgeOutline";
+
+# Get Detail Category
+
+To get the data in the specified collection. If no parameters are passed, it lists all of them.
+Otherwise, it lists the documents in the collection matching the specified parameters:
+
+**Method :** <Badge variant="success">GET</Badge>
+
+**URL :** <Badge variant="dark">/api/category?id=(id)</Badge>
+
+**Response :** <BadgeOutline variant="success">200 - OK</BadgeOutline>
+
+```json
+{
+	"id": 1,
+	"name": "Action",
+	"created_at": "2023-01-30T05:47:42.862225+00:00",
+	"movies": [
+		{
+			"id": 1,
+			"created_at": "2023-02-01T10:31:57.292987+00:00",
+			"name": "Top Gun: Maverick",
+			"description": "After more than thirty years of service as one of the Navy’s top aviators, and dodging the advancement in rank that would ground him, Pete “Maverick” Mitchell finds himself training a detachment of TOP GUN graduates for a specialized mission the likes of which no living pilot has ever seen.",
+			"image_url": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/62HCnUTziyWcpDaBO2i1DX17ljH.jpg",
+			"video_url": "https://youtu.be/qSqVVswa420",
+			"release_date": "2022-05-27",
+			"language": "English",
+			"status": 2,
+			"director_id": 2,
+			"studio_id": 1
+		},
+		{
+			"id": 2,
+			"created_at": "2023-02-02T13:33:10.042563+00:00",
+			"name": "American Made",
+			"description": "The true story of pilot Barry Seal, who transported contraband for the CIA and the Medellin cartel in the 1980s.",
+			"image_url": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/23ILgoPSO5ShKcTZOuiTVfqFAUB.jpg",
+			"video_url": "https://youtu.be/AEBIJRAkujM",
+			"release_date": "2017-08-25",
+			"language": "English",
+			"status": 2,
+			"director_id": 3,
+			"studio_id": 11
+		}
+	]
+}
+```
+
+**Response :** <BadgeOutline variant="warning">404 - Not Found</BadgeOutline>
+
+```json
+Not Found
+```
+
+**Response :** <BadgeOutline variant="danger">500 - Server Error</BadgeOutline>
+
+```json
+Internal Server Error
+```

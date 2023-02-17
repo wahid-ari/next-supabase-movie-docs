@@ -1,0 +1,40 @@
+import Badge from "@components/Badge";
+import BadgeOutline from "@components/BadgeOutline";
+
+# Get All Category
+
+To get the data in the specified collection. If no parameters are passed, it lists all of them.
+Otherwise, it lists the documents in the collection matching the specified parameters:
+
+**Method :** <Badge variant="success">GET</Badge>
+
+**URL :** <Badge variant="dark">/api/category</Badge>
+
+**Response :** <BadgeOutline variant="success">200 - OK</BadgeOutline>
+
+```json
+[
+	{
+		"id": 1,
+		"name": "Action",
+		"created_at": "2023-01-30T05:47:42.862225+00:00"
+	},
+	{
+		"id": 2,
+		"name": "Adventure",
+		"created_at": "2023-01-30T05:48:40.603793+00:00"
+	}
+]
+```
+
+**Response :** <BadgeOutline variant="warning">404 - Not Found</BadgeOutline>
+
+```json
+Not Found
+```
+
+**Response :** <BadgeOutline variant="danger">500 - Server Error</BadgeOutline>
+
+```json
+Internal Server Error
+```

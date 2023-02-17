@@ -1,0 +1,7 @@
+{
+  "list": "Get All Country",
+  "detail": "Get Detail Country",
+  "create": "Create Country",
+  "edit": "Update Country",
+  "delete": "Delete Country"
+}

@@ -1,0 +1,7 @@
+{
+  "list": "Get All Studio",
+  "detail": "Get Detail Studio",
+  "create": "Create Studio",
+  "edit": "Update Studio",
+  "delete": "Delete Studio"
+}

@@ -1,0 +1,97 @@
+import Badge from "@components/Badge";
+import BadgeOutline from "@components/BadgeOutline";
+
+# Get Detail Country
+
+To get the data in the specified collection. If no parameters are passed, it lists all of them.
+Otherwise, it lists the documents in the collection matching the specified parameters:
+
+**Method :** <Badge variant="success">GET</Badge>
+
+**URL :** <Badge variant="dark">/api/country?id=(id)</Badge>
+
+**Response :** <BadgeOutline variant="success">200 - OK</BadgeOutline>
+
+```json
+{
+	"id": 2,
+	"name": "Indonesia",
+	"created_at": "2023-01-30T05:58:55.412153+00:00",
+	"actors": [
+		{
+			"id": 77,
+			"name": "Iko Uwais",
+			"image_url": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/9WngJ2lOCy3UczLv3L2JRZvX0UM.jpg",
+			"gender": 1,
+			"biography": "Iko Uwais born Uwais Qorny is an Indonesian actor, stuntman, fight choreographer, and martial artist.\n\nHe is best known for starring in the action films Merantau (2009), The Raid (2011), The Raid 2 (2014) and Headshot (2016).",
+			"birthday": "1983-02-12",
+			"instagram_url": "https://instagram.com/iko.uwais/",
+			"twitter_url": "https://twitter.com/iko_uwais",
+			"country_id": 2,
+			"created_at": "2023-02-02T08:22:27.242473+00:00"
+		},
+		{
+			"id": 143,
+			"name": "Joe Taslim",
+			"image_url": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/lv85qMVXtofw7VsM7tKR36V0jAy.jpg",
+			"gender": 1,
+			"biography": "Johannes \"Joe\" Taslim is an Indonesian actor and martial artist of Chinese descent. A member of the Indonesia Judo national team from 1997 to 2009, Taslim is best known for his breakthrough role as \"Jaka\" in the critically acclaimed The Raid (2011). Later going on to play \"Jah\" in Fast & Furious 6 (2013), which marked his first role in a film outside Indonesia.",
+			"birthday": "1981-06-23",
+			"instagram_url": "https://instagram.com/joe_taslim/",
+			"twitter_url": "https://twitter.com/joe_taslim",
+			"country_id": 2,
+			"created_at": "2023-02-06T03:49:38.355272+00:00"
+		}
+	],
+	"directors": [
+		{
+			"id": 80,
+			"name": "Angga Sasongko",
+			"image_url": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/yKkBjMzQwGcfbRcSEeCv7k2kIp7.jpg",
+			"gender": 1,
+			"biography": "Angga Dwimas Sasongko (born in Jakarta, January 11, 1985) is an award-winning Indonesian film director. His career began when he was 19 years old. In 2008, he founded Visinema Pictures, an award-winning Film Production Company based in Jakarta, Indonesia. He had created dozens of TV commercial videos, hundreds of Music Videos, one feature documentary and five feature films. Angga won his first award when Cahaya Dari Timur: Beta Maluku (We Are Moluccans) received the Best Picture award at the 2014 Indonesian Film Festival (FFI).",
+			"country_id": 2,
+			"created_at": "2023-02-06T08:17:13.03648+00:00"
+		},
+		{
+			"id": 81,
+			"name": "Joko Anwar",
+			"image_url": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/eOyZy4HSxbdcKR9JIc7093d0alb.jpg",
+			"gender": 1,
+			"biography": "Joko Anwar (born January 3, 1976 in Medan, Indonesia) is a writer-director who started his career as a journalist and film critic. His works include \"The Forbidden Door\" (2009), which received the top prize at the Bucheon International Fantastic Film Festival, and \"A Copy of My Mind\" (2015), which competed at the 72nd Venice International Film Festival. His film \"Satan's Slaves\" (2017) was the highest grossing horror of all time in Indonesia.",
+			"country_id": 2,
+			"created_at": "2023-02-06T08:24:44.281145+00:00"
+		}
+	],
+	"studios": [
+		{
+			"id": 25,
+			"name": "Visinema Pictures",
+			"image_url": "",
+			"city": "Jakarta",
+			"country_id": 2,
+			"created_at": "2023-02-06T08:17:53.637204+00:00"
+		},
+		{
+			"id": 26,
+			"name": "Screenplay Films",
+			"image_url": "https://upload.wikimedia.org/wikipedia/id/thumb/5/56/Logo_Screenplay_Films_%282022%29.png/220px-Logo_Screenplay_Films_%282022%29.png",
+			"city": "Jakarta",
+			"country_id": 2,
+			"created_at": "2023-02-06T08:26:22.547128+00:00"
+		}
+	]
+}
+```
+
+**Response :** <BadgeOutline variant="warning">404 - Not Found</BadgeOutline>
+
+```json
+Not Found
+```
+
+**Response :** <BadgeOutline variant="danger">500 - Server Error</BadgeOutline>
+
+```json
+Internal Server Error
+```

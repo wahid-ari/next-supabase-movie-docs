@@ -2,32 +2,32 @@ import Badge from "@components/Badge";
 import BadgeOutline from "@components/BadgeOutline";
 import Param from "@components/Param";
 
-# Update Playlist
+# Create Category
 
-To edit the data in the specified collection with the specified parameters.
+To create the data in the specified collection with the specified parameters.
 When a JSON object is saved, the object properties are automatically added to the collection you specified.
 
-**Method :** <Badge variant="info">PUT</Badge>
+**Method :** <Badge>POST</Badge>
 
-**URL :** <Badge variant="dark">/api/playlist</Badge>
+**URL :** <Badge variant="dark">/api/category</Badge>
 
 **Body :** <Badge variant="purple">JSON</Badge>
 
 ```json
 {
-  "id": 6,
-  "name": "New Edited Playlist"
+	"name": "New Category"
 }
 ```
 
-<Param name="id" type="number" required={true}>Id of Playlist.</Param>
-<Param name="name" type="string" required={true}>Name of Playlist.</Param>
+<Param name="name" type="string" required={true}>
+	Name of category.
+</Param>
 
 **Response :** <BadgeOutline variant="success">200 - OK</BadgeOutline>
 
 ```json
 {
-  "message": "Success update playlist"
+	"message": "Success add category"
 }
 ```
 
@@ -35,14 +35,8 @@ When a JSON object is saved, the object properties are automatically added to th
 
 ```json
 {
-  "error": "Name required"
+	"error": "Name required"
 }
-```
-
-**Response :** <BadgeOutline variant="warning">404 - Not Found</BadgeOutline>
-
-```json
-Not Found
 ```
 
 **Response :** <BadgeOutline variant="danger">500 - Server Error</BadgeOutline>

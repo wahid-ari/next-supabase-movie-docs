@@ -2,30 +2,44 @@ import Badge from "@components/Badge";
 import BadgeOutline from "@components/BadgeOutline";
 import Param from "@components/Param";
 
-# Create Playlist
+# Create Studio
 
 To create the data in the specified collection with the specified parameters.
 When a JSON object is saved, the object properties are automatically added to the collection you specified.
 
 **Method :** <Badge>POST</Badge>
 
-**URL :** <Badge variant="dark">/api/playlist</Badge>
+**URL :** <Badge variant="dark">/api/studio</Badge>
 
 **Body :** <Badge variant="purple">JSON</Badge>
 
 ```json
 {
-  "name": "New Playlist"
+	"name": "New Studio",
+	"image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Paramount_Pictures_2022_%28Blue%29.svg/175px-Paramount_Pictures_2022_%28Blue%29.svg.png",
+	"city": "City",
+	"country_id": 1
 }
 ```
 
-<Param name="name" type="string" required={true}>Name of Playlist.</Param>
+<Param name="name" type="string" required={true}>
+	Name of studio.
+</Param>
+<Param name="image_url" type="string">
+	Image URL of studio.
+</Param>
+<Param name="city" type="string">
+	City of studio.
+</Param>
+<Param name="country_id" type="integer">
+	Country ID of studio
+</Param>
 
 **Response :** <BadgeOutline variant="success">200 - OK</BadgeOutline>
 
 ```json
-{ 
-  "message": "Success add playlist"
+{
+	"message": "Success add studio"
 }
 ```
 
@@ -33,7 +47,7 @@ When a JSON object is saved, the object properties are automatically added to th
 
 ```json
 {
-  "error": "Name required"
+	"error": "Name required"
 }
 ```
 

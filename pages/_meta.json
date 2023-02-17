@@ -6,9 +6,9 @@
   "movie": "Movie",
   "actor": "Actor",
   "director": "Director",
-  "playlist-user": "Playlist User",
-  "playlist": "Playlist",
-  "song": "Song",
+  "studio": "Studio",
+  "category": "Category",
+  "country": "Country",
   "updates": "Updates",
   "blog": {
     "title": "Blog",
