@@ -67,10 +67,30 @@ When a JSON object is saved, the object properties are automatically added to th
 	Studio ID of movie.
 </Param>
 <Param name="actors" type="array of object">
-	Movie actors
+	Movie actors. 
+	```json
+	[
+		{
+			"value": "ID of Actor"
+		},
+		{
+			"value": "ID of Actor"
+		}
+	]
+	```
 </Param>
 <Param name="categories" type="array of object">
 	Movie categories
+	```json
+	[
+		{
+			"value": "ID of Category"
+		},
+		{
+			"value": "ID of Category"
+		}
+	]
+	```
 </Param>
 
 **Response :** <BadgeOutline variant="success">200 - OK</BadgeOutline>
