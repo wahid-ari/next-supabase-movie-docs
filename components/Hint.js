@@ -13,8 +13,8 @@ export default function Hint({ className, children }) {
 
 Hint.success = ({ className, children }) => {
   return (
-    <div className={`border-l-4 p-3 border-l-emerald-500 rounded bg-emerald-100/50 dark:bg-emerald-900/20 flex gap-3 items-center ${className}`}>
-      <CheckCircleIcon className="h-7 w-7 text-emerald-500" />
+    <div className={`border-l-4 p-3 border-l-sky-500 rounded bg-sky-100/50 dark:bg-sky-900/20 flex gap-3 items-center ${className}`}>
+      <CheckCircleIcon className="h-7 w-7 text-sky-500" />
       <div>
         {children}
       </div>

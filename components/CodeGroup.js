@@ -17,7 +17,7 @@ export default function CodeGroup({ items, children }) {
                   {item}
                   {selected && (
                     <motion.div
-                      className="absolute left-0 right-0 z-10 rounded-full h-[2px] bottom-0 border-b-2 border-b-emerald-500"
+                      className="absolute left-0 right-0 z-10 rounded-full h-[2px] bottom-0 border-b-2 border-b-sky-500"
                       layoutId="underline"
                       initial={false}
                     />

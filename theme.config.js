@@ -7,7 +7,7 @@ const Logo = ({ height }) => (
 )
 
 const config = {
-  primaryHue: 160,
+  primaryHue: 191,
   logo: () => {
     const { route } = useRouter()
     return (
