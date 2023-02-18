@@ -30,7 +30,7 @@ const config = {
     placeholder: "Search..."
   },
   project: {
-    link: 'https://github.com/wahid-ari/next-supabase-music-docs',
+    link: 'https://github.com/wahid-ari/next-supabase-movie-docs',
   },
   // chat: {
   //   link: 'https://discord.com',
@@ -75,7 +75,7 @@ const config = {
       <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     </>
   ),
-  docsRepositoryBase: 'https://github.com/wahid-ari/next-supabase-music-docs/tree/master/',
+  docsRepositoryBase: 'https://github.com/wahid-ari/next-supabase-movie-docs/tree/master/',
   banner: {
     key: 'banner',
     text: (

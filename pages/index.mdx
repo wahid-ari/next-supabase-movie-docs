@@ -1,20 +1,14 @@
 import { Card, Cards } from "@components/cards";
 import {
-  XIcon,
-  LogoutIcon,
-  ViewGridIcon,
-  CogIcon,
-  TemplateIcon,
-  RectangleStackIcon,
   UserGroupIcon,
-  MusicalNoteIcon,
-  SwatchIcon,
-  BookmarkIcon,
   ChartPieIcon,
-  SearchIcon,
-  LoginIcon,
   MagnifyingGlassIcon,
-  ArrowRightOnRectangleIcon
+  ArrowRightOnRectangleIcon,
+	FilmIcon,
+	UsersIcon,
+	BuildingLibraryIcon,
+	FlagIcon,
+	SwatchIcon
 } from "@heroicons/react/24/outline";
 
 # Introduction
@@ -71,37 +65,44 @@ Discover our REST API documentation
 	/>
 	<Card
 		icon={
-			<SwatchIcon className="w-6 h-6" />
+			<FilmIcon className="w-6 h-6" />
 		}
-		title="Genre"
-		href="/genre"
-	/>
-	<Card
-		icon={
-			<BookmarkIcon className="w-6 h-6" />
-		}
-		title="Playlist"
-		href="/playlist"
+		title="Movie"
+		href="/movie"
 	/>
 	<Card
 		icon={
 			<UserGroupIcon className="w-6 h-6" />
 		}
-		title="Artist"
-		href="/artist"
+		title="Actor"
+		href="/actor"
 	/>
 	<Card
 		icon={
-			<RectangleStackIcon className="w-6 h-6" />
+			<UsersIcon className="w-6 h-6" />
 		}
-		title="Album"
-		href="/album"
+		title="Director"
+		href="/director"
 	/>
 	<Card
 		icon={
-			<MusicalNoteIcon className="w-6 h-6" />
+			<BuildingLibraryIcon className="w-6 h-6" />
 		}
-		title="Song"
-		href="/song"
+		title="Studio"
+		href="/studio"
+	/>
+	<Card
+		icon={
+			<SwatchIcon className="w-6 h-6" />
+		}
+		title="Category"
+		href="/category"
+	/>
+	<Card
+		icon={
+			<FlagIcon className="w-6 h-6" />
+		}
+		title="Country"
+		href="/country"
 	/>
 </Cards>
