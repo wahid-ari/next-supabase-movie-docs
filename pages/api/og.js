@@ -48,7 +48,7 @@ export default async function handler(req) {
 
           <h1
             style={{
-              fontSize: 82,
+              fontSize: 64,
               margin: '0 0 40px -2px',
               lineHeight: 1.1,
               textShadow: '0 2px 30px #000',
