@@ -54,10 +54,6 @@ export default async function handler(req) {
               lineHeight: 1.1,
               textShadow: '0 2px 30px #000',
               letterSpacing: -4,
-              backgroundImage: 'linear-gradient(90deg, #fff 40%, #aaa)',
-              backgroundClip: 'text',
-              '-webkit-background-clip': 'text',
-              color: 'transparent'
             }}
           >
             {title}
