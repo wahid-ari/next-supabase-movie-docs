@@ -48,12 +48,21 @@ aside > div > ul > li:not(.active) > a {
 
 /* Sidemenu item*/
 aside > div > ul > li > div.nx-transform-gpu > div.nx-transform-gpu > ul > li:not(.active) > a {
-	@apply dark:text-neutral-400;
+	@apply dark:text-neutral-400 mr-1;
 }
 
 /* Menu item mobile*/
 li.open > div.nx-transform-gpu > div.nx-transform-gpu > ul > li:not(.active) > a {
 	@apply dark:text-neutral-400;
+}
+
+/* Table of Content */
+nav.nextra-toc > div > ul {
+	@apply ml-0.5
+}
+
+nav.nextra-toc > div > div > a {
+	@apply ml-0.5
 }
 
 /* Request Response code */
