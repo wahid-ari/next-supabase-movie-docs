@@ -50,8 +50,8 @@ const config = {
     const { route } = useRouter()
     const socialCard =
       route === '/' || !title
-        ? 'https://my-music-docs.vercel.app/og.png'
-        : `https://my-music-docs.vercel.app/api/og?title=${title}`
+        ? `${process.env.BASE_URL}/og.png`
+        : `${process.env.BASE_URL}/api/og?title=${title}`
 
     return (
       <>
@@ -66,9 +66,9 @@ const config = {
         <meta name="og:image" content={socialCard} />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site:domain" content="my-music-docs.vercel.app" />
-        <meta name="twitter:site" content="my-music-docs.vercel.app" />
-        <meta name="twitter:url" content="https://my-music-docs.vercel.app" />
+        <meta name="twitter:site:domain" content={process.env.SITE_URL} />
+        <meta name="twitter:site" content={process.env.SITE_URL} />
+        <meta name="twitter:url" content={process.env.BASE_URL} />
         <meta name="twitter:image" content={socialCard} />
 
         <meta name="apple-mobile-web-app-title" content="MyMovie" />
@@ -86,7 +86,7 @@ const config = {
   banner: {
     key: 'banner',
     text: (
-      <a href="https://my-music-docs.vercel.app/blog/MyMovie">
+      <a href={`${process.env.BASE_URL}/blog/MyMovie`}>
         🎉 MyMovie 1.0 is released. Read more →
       </a>
     )
@@ -108,7 +108,7 @@ const config = {
               target="_blank"
               rel="noopener noreferrer"
               title="vercel.com homepage"
-              href="https://vercel.com?utm_source=my-music-docs.vercel.app"
+              href="https://vercel.com"
             >
               <span>Powered by</span>
               <svg height={20} viewBox="0 0 283 64" fill="none">

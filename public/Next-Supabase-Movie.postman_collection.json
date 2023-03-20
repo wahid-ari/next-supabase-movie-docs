@@ -5949,7 +5949,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"password\"\r\n}",
+					"raw": "{\r\n    \"username\": \"username\",\r\n    \"password\": \"secret\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -5977,7 +5977,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"password\"\r\n}",
+							"raw": "{\r\n    \"username\": \"username\",\r\n    \"password\": \"secret\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"

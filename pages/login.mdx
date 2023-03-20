@@ -15,7 +15,7 @@ Registered users can login using the API described below. The login operation re
 ```json
 {
 	"username": "username",
-	"password": "password"
+	"password": "secret"
 }
 ```
 
@@ -29,7 +29,7 @@ Registered users can login using the API described below. The login operation re
 
   var raw = JSON.stringify({
       "username": "username",
-      "password": "password"
+      "password": "secret"
   });
 
   var requestOptions = {
@@ -53,7 +53,7 @@ Registered users can login using the API described below. The login operation re
   conn = http.client.HTTPSConnection("localhost", 3000)
   payload = json.dumps({
       "username": "username",
-      "password": "password"
+      "password": "secret"
   })
   headers = {
       'Content-Type': 'application/json'
