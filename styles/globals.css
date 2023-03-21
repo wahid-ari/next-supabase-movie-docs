@@ -48,7 +48,7 @@ aside > div > ul > li:not(.active) > a {
 
 /* Sidemenu item*/
 aside > div > ul > li > div.nx-transform-gpu > div.nx-transform-gpu > ul > li:not(.active) > a {
-	@apply dark:text-neutral-400 mr-1;
+	@apply dark:text-neutral-400 dark:hover:text-neutral-100 mr-1;
 }
 
 /* Menu item mobile*/
