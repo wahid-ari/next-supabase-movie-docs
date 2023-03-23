@@ -86,7 +86,7 @@ const config = {
   banner: {
     key: 'banner',
     text: (
-      <a href={`${process.env.BASE_URL}/blog/MyMovie`}>
+      <a href={`${process.env.BASE_URL}/blog/mymovie`}>
         🎉 MyMovie 1.0 is released. Read more →
       </a>
     )
