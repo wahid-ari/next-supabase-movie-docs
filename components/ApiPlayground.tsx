@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useState, ReactNode } from "react";
 import cn from "clsx";
 import axios from "axios";
 import formatHighlight from 'json-format-highlight';
 
-function MethodBadge(method) {
+function MethodBadge(method: string) {
   let color = 'text-red-600 bg-red-200 border border-red-500'
   if (method == "POST") color = 'text-blue-600 bg-blue-200 border border-blue-500'
   if (method == "GET") color = 'text-green-600 bg-green-200 border border-green-500'
@@ -17,7 +17,15 @@ function MethodBadge(method) {
   )
 }
 
-export default function ApiPlayground({ method, endpoint, children, param = false, paramName = "" }) {
+type Props = {
+  method?: string;
+  endpoint?: string;
+  children?: ReactNode;
+  param?: boolean;
+  paramName?: string;
+}
+
+export default function ApiPlayground({ method, endpoint, children, param = false, paramName = "Param" }: Props) {
   const [fetched, setFetched] = useState(false)
   const [data, setData] = useState()
   const [loading, setLoading] = useState(false)
@@ -28,7 +36,7 @@ export default function ApiPlayground({ method, endpoint, children, param = fals
     setLoading(true)
     setFetched(false)
     try {
-      const res = await axios.get(`${process.env.API_URL}/api/${endpoint}`, paramName && { params: { [paramName]: value } })
+      const res = await axios.get(`${process.env.API_URL}/api/${endpoint}`, { params: { [paramName]: value } })
       setData(res.data)
     } catch (error) {
       setData(error.response?.data)

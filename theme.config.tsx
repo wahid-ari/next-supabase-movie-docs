@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import { useConfig } from 'nextra-theme-docs'
 import Image from "next/image";
 
-const Logo = ({ height }) => (
+const Logo = ({ height }: { height: number }) => (
   <Image src="/icon.png" alt="Icon" className="rounded-full" width={100} height={100} />
 )
 
