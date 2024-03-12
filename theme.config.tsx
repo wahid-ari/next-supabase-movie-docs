@@ -14,7 +14,7 @@ const config = {
     return (
       <>
         {/* <Logo height={18} /> */}
-        <Image src="/icon.jpg" alt="Icon" className="rounded-full" width={24} height={24} />
+        <Image src="/icon.png" alt="Icon" className="rounded-full" width={24} height={24} />
         {/* {route === '/' ? null : ( */}
         <span
           className='mx-2 font-bold select-none'
